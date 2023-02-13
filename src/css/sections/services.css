@@ -1,0 +1,145 @@
+.services {
+  margin-bottom: 200px;
+}
+
+.services__inner {
+  display: flex;
+}
+
+.services__headerWrapper {
+  max-width: 418px;
+  margin-right: 30px;
+}
+
+.services__header {
+  line-height: 1.25;
+}
+
+.services__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.services__content {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.services__contentProgress {
+  --swiper-pagination-color: var(--sandal);
+
+  display: none;
+
+  position: relative;
+  height: 2px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+
+.services__content .swiper-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+
+.services__button {
+  align-self: stretch;
+}
+
+@media screen and (max-width: 1700px) {
+  .services {
+    margin-bottom: 150px;
+  }
+
+  .services__headerWrapper {
+    max-width: 320px;
+  }
+
+  .services__content {
+
+  }
+
+  .services__content .swiper-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .services__button {
+    align-self: stretch;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .services__content .swiper-wrapper {
+    display: flex;
+    grid-template-columns: none;
+    grid-template-rows: none;
+    gap: 0;
+  }
+
+  .services__contentProgress {
+    display: block;
+  }
+
+  .services {
+    margin-bottom: 100px;
+  }
+
+  .services__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services__headerWrapper {
+    max-width: 100%;
+    margin-right: 10px;
+  }
+
+  .services__header {
+    margin-bottom: 45px;
+  }
+
+  .services__right {
+    display: flex;
+    width: 100%;
+  }
+
+  .services__content {
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+
+    overflow: hidden;
+  }
+
+  .services__button {
+    margin-top: 78px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services {
+    margin-bottom: 80px;
+  }
+
+  .services__headerWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .services__header {
+    margin-bottom: 35px;
+  }
+
+  .services__button {
+    margin-top: 76px;
+  }
+}

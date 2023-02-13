@@ -1,0 +1,129 @@
+.button {
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--accent-font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+
+  padding: 32px 60px;
+  background-color: var(--sandal);
+  transition: background-color 400ms ease;
+
+  flex-shrink: 0;
+  transform: translateZ(0);
+}
+
+/* .button:hover,
+.button--active {
+  background-color: var(--brown);
+} */
+
+.button--smaller {
+  padding-top: 25;
+  padding-bottom: 25;
+}
+
+.button--thinner {
+  font-weight: 400;
+}
+
+.button--white {
+  background-color: transparent;
+  color: var(--brown);
+  border: 1px solid var(--sandal);
+}
+
+/* .button--white:hover {
+  background-color: var(--sandal);
+  color: var(--white);
+} */
+
+.button__caption {
+  font-family: var(--accent-font);
+  color: var(--brown);
+  margin-left: 6px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.button__caption span {
+  opacity: 0.4;
+  margin-right: 11px;
+}
+
+.button__icon {
+  width: 12px;
+  height: 14px;
+  fill: var(--sandal);
+}
+
+/* .button:hover .button__caption {
+  color: var(--white);
+}
+
+.button:hover .button__icon {
+  fill: var(--white);
+} */
+
+.disabled[disabled] {
+  opacity: .5;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1490px) {
+  .button--smallerOnDesktop {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .button {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .button {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    padding-right: 58px;
+    padding-left: 58px;
+  }
+
+  .button--widerOnTablet {
+    padding-left: 104px;
+    padding-right: 104px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .button {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+
+  .button__caption {
+    margin-left: 3px;
+}
+
+  .button__caption span {
+    margin-right: 3px;
+}
+}

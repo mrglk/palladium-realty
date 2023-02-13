@@ -1,0 +1,79 @@
+.animatedButton {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0);
+  }
+  
+  .animatedButton__content,
+  .animatedButton__contentHovered {
+    transition: transform 200ms ease, background-color 200ms ease,
+      color 200ms ease;
+      width: 100%;
+  }
+  
+  .animatedButton .animatedButton__content {
+    transition: transform 200ms ease;
+  }
+  
+  .animatedButton .animatedButton__contentHovered {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(100%);
+    background-color: var(--brown);
+  
+    transition: transform 200ms ease;
+  }
+  
+  .animatedButton:hover .animatedButton__content {
+    transform: translateY(-100%);
+  }
+  
+  .animatedButton:hover .animatedButton__contentHovered {
+    transform: translateY(0%);
+  }
+
+  .animatedButton--white .animatedButton__contentHovered {
+    background-color: var(--sandal);
+    color: var(--white);
+  }
+
+  .animatedButton--white:hover .button__caption {
+    color: var(--white);
+  }
+  
+  .animatedButton--white:hover .button__icon {
+    fill: var(--white);
+  }
+
+
+  @media screen and (max-width: 960px) {
+    .animatedButton:hover .animatedButton__content {
+      transform: none
+    }
+
+    .animatedButton:hover .animatedButton__contentHovered {
+      transform: none;
+      display: none;
+    }
+
+    .animatedButton--white .animatedButton__contentHovered {
+      background-color: var(--white);
+      color: var(--brown);
+    }
+  
+    .animatedButton--white:hover .button__caption {
+      color: inherit;
+    }
+    
+    .animatedButton--white:hover .button__icon {
+      fill: var(--sandal);
+    }
+  }  
+
+  @media screen and (max-width: 520px) {
+    .animatedButton {
+        width: 100%;
+    }
+  }  

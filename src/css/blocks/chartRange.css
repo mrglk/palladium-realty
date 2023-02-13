@@ -1,0 +1,145 @@
+.chartRange {
+  width: 450px;
+  position: relative;
+}
+
+.chartRange:before {
+  content: '';
+  right: 100%;
+  background-color: var(--white-cream);
+  position: absolute;
+  height: 10px;
+  width: 20px;
+  top: -3px;
+}
+
+.chartRange:after {
+  content: '';
+  left: 100%;
+  background-color: var(--white-cream);
+  position: absolute;
+  height: 10px;
+  width: 20px;
+  top: -3px;
+}
+
+.chartRange__input {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  /*max-width: 448px;*/
+  width: calc(100% + 32px);
+  margin-left: -16px;
+}
+
+.chartRange__input:focus {
+  outline: none;
+}
+
+.chartRange__input::-webkit-slider-runnable-track {
+  background-color: var(--sandal);
+  height: 2px;
+}
+
+.chartRange__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -16px;
+
+  position: relative;
+  z-index: 5;
+
+  border-radius: 50%;
+
+  background-color: var(--white);
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  height: 32px;
+  width: 32px;
+}
+
+.chartRange__input::-moz-range-track {
+  background-color: var(--sandal);
+  height: 2px;
+}
+
+.chartRange__input::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -16px;
+
+  border-radius: 50%;
+  border: none;
+
+  position: relative;
+  z-index: 5;
+
+  background-color: var(--white);
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  height: 32px;
+  width: 32px;
+}
+/* 
+.chartRange__input:focus::-webkit-slider-thumb,
+.chartRange__input:focus::-moz-range-thumb {
+} */
+
+.chartRange__dates {
+  font-size: 16px;
+  font-family: var(--accent-font);
+
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% + 32px);
+  margin-left: -16px;
+}
+
+.chartRange__date {
+  cursor: pointer;
+}
+
+.chartRange__steps {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: -1;
+  position: relative;
+  margin-top: -7px;
+}
+
+.chartRange__step {
+  content: "";
+  background-color: var(--sandal);
+  height: 14px;
+  width: 2px;
+}
+
+@media screen and (max-width: 1050px) {
+  .chartRange {
+    width: 334px;
+  }
+  .chartRange__dates {
+    font-size: 14px;
+    margin-top: 21px;
+  }
+
+  .chartRange__input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -12px;
+
+    border-radius: 50%;
+
+    background-color: var(--white);
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    height: 24px;
+    width: 24px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .chartRange {
+    width: 261px;
+  }
+}

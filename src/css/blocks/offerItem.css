@@ -1,0 +1,183 @@
+.offerItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 40px 30px 40px;
+  background-color: #f9f3ee;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offerItem--lighter {
+  background-color: var(--white-cream);
+}
+
+.offerItem--triangle {
+  background-image: url("/img/bg-triangle.png");
+}
+
+.offerItem--wave {
+  background-image: url("/img/bg-wave.png");
+}
+
+.offerItem--circle {
+  background-image: url("/img/bg-circle.png");
+}
+
+.offerItem--web {
+  background-image: url("/img/bg-web.png");
+}
+
+.offerItem--line {
+  background-image: url("/img/bg-line.png");
+}
+
+.offerItem--cross {
+  background-image: url("/img/bg-cross.png");
+}
+
+.offerItem__about {
+  width: 100%;
+}
+
+.offerItem__title {
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--brown);
+  margin-bottom: 20px;
+}
+
+.offerItem__text {
+  max-width: 509px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--black);
+  margin-bottom: 57px;
+}
+
+.offerItem__number {
+  display: none;
+}
+
+.offerItem__button {
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 1700px) {
+  .offerItem {
+    padding-right: 50px;
+  }
+  .offerItem__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .offerItem__text {
+    font-size: 16px;
+    margin-bottom: 34px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .offerItem {
+    position: relative;
+    max-width: 335px;
+    padding: 35px 24px 35px 25px;
+    min-height: 380px;
+    margin-right: 15px;
+}
+
+.offerItem:nth-child(3) {
+ order: 6;
+}
+
+.offerItem:nth-child(4) {
+  order: 5;
+ }
+
+.offerItem--lighter {
+  border: 1px solid rgba(157, 140, 124, 0.3);
+}
+
+  .offerItem:not(:nth-child(3)) {
+    padding-right: 50px;
+    margin-right: 15px;
+  }
+  
+  .offerItem__title {
+    font-size: 20px;
+  }
+  
+  .offerItem__text {
+    font-size: 14px;
+  }
+  .offerItem__number {
+    position: absolute;
+    left: 25px;
+    bottom: 35px;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--brown);
+  }
+
+  .offerItem__number span {
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .offerItem__button {
+   display: none;
+  }
+
+  .offerItem--triangle {
+    background-image: url("/img/bg-triangle-tablet.png");
+  }
+  
+  .offerItem--wave {
+    background-image: url("/img/bg-wave-tablet.png");
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .offerItem {
+    min-width: 288px;
+}
+  .offerItem {
+    margin-right: 20px;
+  }
+  .offerItem__title {
+    font-size: 20px;
+  }
+  
+  .offerItem__text {
+    font-size: 14px;
+  }
+
+  .offerItem__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .offerItem__number {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--brown);
+  }
+
+  .offerItem__number span {
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .offerItem__button {
+   display: none;
+  }
+}

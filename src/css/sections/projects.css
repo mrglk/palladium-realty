@@ -1,0 +1,127 @@
+.projects {
+  padding-top: 87px;
+  margin-bottom: 133px;
+  background-color: var(--sandal);
+}
+
+.projects__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 72px;
+}
+
+.projects__header {
+  color: var(--cream);
+  margin-right: 10px;
+}
+
+.projects__filterWrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.projects__filter {
+  display: flex;
+  align-items: flex-end;
+}
+
+.projects__filter button:not(:last-child) {
+  margin-right: 26px;
+}
+
+.projects__slider {
+  position: relative;
+  margin-bottom: 91px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1700px) {
+  .projects__top {
+    margin-bottom: 67px;
+  }
+
+  .projects__filter button:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .projects__slider {
+    margin-bottom: 63px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .projects {
+    padding-top: 40px;
+    margin-bottom: 100px;
+}
+
+  .projects__top {
+    margin-bottom: 35px;
+  }
+
+  .projects__slider {
+    margin-bottom: 60px;
+  }
+  .projects__sliderButton {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  .projects__header {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .projects {
+    margin-bottom: 80px;
+  }
+
+  .projects__top {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .projects__header {
+    text-align: center;
+    max-width: 263px;
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+
+  .projects__slider {
+    margin-bottom: 66px;
+  }
+
+  .projects__filter {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .projects__filterWrapperLayer {
+    position: relative;
+    overflow-x: auto;
+    margin-bottom: -30px;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+
+  .projects__filterWrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+/* @media screen and (max-width: 415px) {
+  .projects__filter {
+    justify-content: flex-start;
+    width: 100%;
+  }
+} */

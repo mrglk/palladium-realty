@@ -1,0 +1,152 @@
+.mapItem__desktopHidden {
+  display: none;
+}
+
+.mapItem {
+  position: absolute;
+  max-width: 440px;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 200ms ease;
+}
+
+.mapItem--active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.mapItem__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+}
+
+.mapItem__closeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--brown);
+  width: 60px;
+  height: 60px;
+}
+
+.mapItem__closeButton::after,
+.mapItem__closeButton::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 15px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);;
+  background-color: var(--white);
+}
+
+.mapItem__closeButton::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.mapItem__photo {
+  max-width: 440px;
+}
+
+.mapItem__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 40px 40px 40px;
+  background-color: var(--sandal);
+}
+
+.mapItem__header {
+  margin-bottom: 30px;
+}
+
+.mapItem__description {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mapItem__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mapItem__cell:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.mapItem__subtitle {
+  opacity: 0.5;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.mapItem__data {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+
+@media screen and (max-width: 1700px) {
+  .mapItem__content {
+    padding: 25px 47px 42px 46px;
+  }
+  
+  .mapItem__header {
+    margin-bottom: 34px;
+  }
+  
+  .mapItem__cell:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .mapItem__data {
+    font-size: 18px;
+  }
+  
+}
+
+@media screen and (max-width: 960px) {
+  .mapItem {
+    left: 0;
+  }
+
+  .mapItem__desktopHidden {
+    display: block;
+  }
+  
+  .mapItem__content {
+    /*margin-bottom: 50px;*/
+  }
+  
+  .mapItem__subtitle {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mapItem {
+    width: 100%;
+  }
+  
+  .mapItem__photo {
+    /*max-width: 336px;*/
+  }
+
+  .mapItem__content {
+    padding: 30px 20px 50px 20px;
+  }
+  
+  .mapItem__header {
+    margin-bottom: 25px;
+  }
+}

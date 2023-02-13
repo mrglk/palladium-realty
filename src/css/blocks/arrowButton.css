@@ -1,0 +1,46 @@
+.arrowButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    background-color: var(--cream);
+    width: 48px;
+    height: 48px;
+    border-radius: 200px;
+    border: none;
+    transition: background-color 80ms ease, color 80ms ease;
+}
+
+.arrowButton:hover {
+    background-color: var(--brown);
+}
+
+.arrowButton--transparent {
+    background-color: transparent;
+    border: 1px solid var(--sandal);
+}
+
+.arrowButton__icon {
+    fill: var(--brown);
+    width: 7px;
+    height: 12px;
+}
+
+.arrowButton__icon--back {
+    fill: var(--brown);
+    width: 7px;
+    height: 12px;
+    transform: rotate(180deg);
+}
+
+.arrowButton:hover .arrowButton__icon {
+    fill: var(--cream);
+}
+
+@media screen and (max-width: 570px) {
+    .arrowButton {
+        width: 40px;
+        height: 40px;
+    }
+}

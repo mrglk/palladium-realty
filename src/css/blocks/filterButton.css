@@ -1,0 +1,38 @@
+.filterButton {
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+  
+    color: var(--cream);
+    border: 1px solid rgba(249, 245, 233, 0.4);
+    border-radius: 74px;
+  
+    padding: 20px 50px;
+    background-color: var(--sandal);
+    transition: background-color 200ms ease, color 200ms ease;
+}
+
+.filterButton:hover, .filterButton--active {
+    background-color: var(--cream);
+    color: var(--black);
+}
+
+
+@media screen and (max-width: 1700px) {
+    .filterButton {
+        padding: 15px 40px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .filterButton {
+         font-size: 10px;
+        padding: 10px 10px;
+    }
+}

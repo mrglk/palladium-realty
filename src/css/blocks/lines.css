@@ -1,0 +1,23 @@
+.lines {
+
+}
+
+.lines__line {
+  display: inline-block;
+  transform: translateY(1em);
+  opacity: 0;
+
+  transition: transform 800ms ease 1000ms, opacity 800ms ease 1000ms;
+}
+
+.lines--shown .lines__line {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.lines__temp {
+  position: fixed;
+  left: -999px;
+  top: -999px;
+  white-space: nowrap;
+}

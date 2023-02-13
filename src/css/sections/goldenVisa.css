@@ -1,0 +1,354 @@
+.goldenVisa__mobileVisible {
+  display: none;
+}
+.goldenVisa {
+  margin-bottom: 205px;
+}
+
+.goldenVisa__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.goldenVisa__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 110px;
+}
+
+.goldenVisa__left {
+  max-width: 700px;
+  width: 40%;
+}
+
+.goldenVisa__header {
+  line-height: 1.2;
+  margin-bottom: 45px;
+}
+
+.goldenVisa__description {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 50px;
+}
+
+.goldenVisa__list {
+  margin-top: 40px;
+}
+
+.goldenVisa__list li {
+  padding-left: 25px;
+  margin-left: 17px;
+  text-transform: uppercase;
+}
+
+.goldenVisa__list li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.goldenVisa__image {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+}
+
+.goldenVisa__image img {
+  padding-top: 18px;
+  max-width: 914px;
+  width: 100%;
+}
+
+.goldenVisa__bottom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-right: 140px;
+}
+
+.goldenVisa__bottom::before {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: block;
+  content: "";
+  height: 3px;
+  width: 149px;
+  background-color: var(--brown);
+}
+
+.goldenVisa__subtitle {
+  max-width: 312px;
+  font-family: var(--accent-font);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.3;
+  margin-right: 160px;
+  padding-top: 30px;
+}
+
+.goldenVisa__subtitle--ru {
+  max-width: 100%;
+}
+
+.goldenVisa__logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.goldenVisa__logo {
+  width: 100%;
+}
+.goldenVisa__logo:nth-child(1) {
+  max-width: 370px;
+}
+.goldenVisa__logo:nth-child(2) {
+  max-width: 166px;
+}
+
+.goldenVisa__logo:nth-child(3) {
+  max-width: 134px;
+}
+
+@media screen and (max-width: 1600px) {
+  .goldenVisa__bottom {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .goldenVisa {
+    margin-bottom: 183px;
+  }
+
+  .goldenVisa__main {
+    margin-bottom: 80px;
+  }
+
+  .goldenVisa__left {
+    max-width: 615px;
+    width: 47%;
+  }
+
+  .goldenVisa__header {
+    margin-bottom: 50px;
+    max-width: 563px;
+  }
+
+  .goldenVisa__description {
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+
+  .goldenVisa__list {
+    margin-top: 40px;
+  }
+
+  .goldenVisa__list li {
+    padding-left: 15px;
+    line-height: 1.5;
+  }
+
+  .goldenVisa__list li:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .goldenVisa__image {
+    width: 47%;
+    align-items: flex-start;
+  }
+
+  .goldenVisa__image img {
+    padding-top: 80px;
+    max-width: 650px;
+  }
+
+  .goldenVisa__bottom::before {
+    height: 2px;
+    width: 113px;
+  }
+
+  .goldenVisa__subtitle {
+    max-width: 280px;
+    font-size: 28px;
+    margin-right: 50px;
+    padding-top: 20px;
+  }
+
+  .goldenVisa__logo:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .goldenVisa__logo:nth-child(1) {
+    max-width: 370px;
+  }
+  .goldenVisa__logo:nth-child(2) {
+    max-width: 166px;
+  }
+
+  .goldenVisa__logo:nth-child(3) {
+    max-width: 134px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .goldenVisa {
+    margin-bottom: 100px;
+  }
+
+  .goldenVisa__main {
+    margin-bottom: 40px;
+  }
+
+  .goldenVisa__left {
+    max-width: 408px;
+    width: 53%;
+  }
+
+  .goldenVisa__header {
+    margin-bottom: 45px;
+    max-width: 420px;
+  }
+
+  .goldenVisa__description {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .goldenVisa__list {
+    margin-top: 30px;
+  }
+
+  .goldenVisa__list li {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+
+  .goldenVisa__list li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .goldenVisa__image {
+    width: 47%;
+  }
+
+  .goldenVisa__bottom::before {
+    height: 1px;
+    width: 117px;
+  }
+
+  .goldenVisa__subtitle {
+    font-size: 24px;
+    margin-right: 25px;
+    padding-top: 20px;
+  }
+
+  .goldenVisa__logo:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .goldenVisa__logo:nth-child(1) {
+    max-width: 173px;
+  }
+  .goldenVisa__logo:nth-child(2) {
+    max-width: 75px;
+  }
+
+  .goldenVisa__logo:nth-child(3) {
+    max-width: 68px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .goldenVisa__mobileHidden {
+    display: none;
+  }
+
+  .goldenVisa__mobileVisible {
+    display: block;
+  }
+  .goldenVisa {
+    margin-bottom: 80px;
+  }
+
+  .goldenVisa__main {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .goldenVisa__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .goldenVisa__header {
+    text-align: center;
+    margin-bottom: 35px;
+    max-width: 480px;
+  }
+
+  .goldenVisa__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .goldenVisa__image img {
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .goldenVisa__description p {
+    text-align: center;
+  }
+
+  .goldenVisa__list {
+    margin-top: 37px;
+  }
+
+  .goldenVisa__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .goldenVisa__bottom::before {
+    top: 0;
+    height: 1px;
+    width: 117px;
+  }
+
+  .goldenVisa__subtitle {
+    max-width: 100%;
+    font-size: 20px;
+    margin-right: 50px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .goldenVisa__logo {
+    max-height: 40px;
+  }
+
+  .goldenVisa__logo:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  .goldenVisa__logo:nth-child(1) {
+    max-width: 154px;
+  }
+  .goldenVisa__logo:nth-child(2) {
+    max-width: 66px;
+  }
+
+  .goldenVisa__logo:nth-child(3) {
+    max-width: 53px;
+  }
+}

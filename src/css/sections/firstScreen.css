@@ -1,0 +1,166 @@
+.firstScreen {
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: image-set(url(..//img/offer-bg.png) 1x, url(..//img/offer-bg@2x.png) 2x); */
+  background-image: url("/img/first-screen-bg.jpg");
+  background-position: center;
+  padding-top: 239px;
+  margin-bottom: 200px;
+}
+
+.firstScreen__input select {
+  display: none;
+}
+
+.firstScreen__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstScreen__header {
+  text-align: center;
+  max-width: 834px;
+  font-family: var(--accent-font);
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  color: var(--white);
+  margin: 0 0 25px 0;
+}
+
+.firstScreen__description {
+  text-align: center;
+  margin: 0 0 66px 0;
+  max-width: 435px;
+  font-size: 24px;
+  line-height: 1.4;
+  color: var(--white);
+}
+
+.firstScreen__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 130px;
+  width: 100%;
+}
+
+.firstScreen__inputsGroup {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding-bottom: 82px;
+  width: 100%;
+}
+
+.firstScreen__input {
+  width: 100%;
+}
+
+@media screen and (max-width: 1700px) {
+  .firstScreen {
+    padding-top: 210px;
+    margin-bottom: 154px;
+  }
+
+  .firstScreen__header {
+    max-width: 657px;
+    margin-bottom: 25px;
+  }
+
+  .firstScreen__description {
+    margin-bottom: 55px;
+    max-width: 369px;
+    font-size: 22px;
+  }
+
+  .firstScreen__form {
+    padding-bottom: 109px;
+  }
+
+  .firstScreen__inputsGroup {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .firstScreen__inputsGroup {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 35px;
+    padding-bottom: 82px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .firstScreen {
+    padding-top: 160px;
+    margin-bottom: 100px;
+  }
+
+  .firstScreen__header {
+    max-width: 450px;
+    margin-bottom: 30px;
+  }
+
+  .firstScreen__description {
+    margin-bottom: 40px;
+    max-width: 234px;
+    font-size: 18px;
+  }
+
+  .firstScreen__form {
+    padding-bottom: 70px;
+  }
+
+  .firstScreen__inputsGroup {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .firstScreen__mobileHidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .firstScreen {
+    margin-bottom: 80px;
+  }
+
+  .firstScreen__inputsGroup {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 35px;
+    padding-bottom: 82px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .firstScreen__inputsGroup {
+    gap: 24px;
+    padding-bottom: 40px;
+  }
+
+  .firstScreen__header {
+    max-width: 335px;
+    margin-bottom: 16px;
+  }
+
+  .firstScreen__description {
+    margin-bottom: 30px;
+  }
+
+  .firstScreen__form {
+    padding-bottom: 70px;
+  }
+
+  .firstScreen__inputsGroup {
+    padding-bottom: 69px;
+  }
+}

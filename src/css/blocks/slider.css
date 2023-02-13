@@ -1,0 +1,40 @@
+.slider {
+    position: relative;
+    /*overflow-y: scroll;*/
+    
+}
+
+.slider__content {
+    /*display: flex;*/
+    /*justify-content: flex-end;*/
+    overflow: hidden;
+}
+
+.slider__button {
+    position: absolute;
+    top: 190px;
+    z-index: 2;
+}
+
+.slider__button--left {
+    position: absolute;
+    left: -20px;
+}
+
+.slider__button--right {
+    position: absolute;
+    right: -20px;
+}
+
+@media screen and (max-width: 1700px) {
+    .slider__button {
+        top: 140px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .slider__button {
+        display: none;
+    }
+    
+}

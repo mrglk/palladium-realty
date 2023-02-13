@@ -1,0 +1,55 @@
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.inputWrapper__caption {
+  content: attr(data-lable);
+
+  display: inline-block;
+  position: absolute;
+
+  top: -13px;
+  left: 19px;
+  height: 13px;
+
+  padding: 4px 10px 0 10px;
+
+  border-radius: 4px 4px 0 0;
+  backdrop-filter: blur(9px);
+  background: rgba(255, 255, 255, 0.4);
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--white);
+  /* z-index: 10; */
+
+  transition: color 200ms ease, background-color 200ms ease;
+}
+
+.select--active + .inputWrapper__caption {
+  background: #FFF;
+  color: var(--brown);
+  z-index: 21;
+  backdrop-filter: none;
+}
+
+.select--active {
+  z-index: 20;
+}
+
+@media screen and (max-width: 1700px) {
+  .inputWrapper__caption {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .inputWrapper__caption {
+    font-size: 12px;
+    top: -9px;
+    left: 19px;
+    height: 9px;
+  }
+}

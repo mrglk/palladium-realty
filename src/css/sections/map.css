@@ -1,0 +1,155 @@
+.map__desktopHidden {
+  display: none;
+}
+
+.map {
+  height: 1100px;
+  margin-bottom: 200px;
+  position: relative;
+}
+
+.map__inner {
+  padding-top: 120px;
+}
+
+.map__top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 6;
+}
+
+.map__controls {
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+
+  z-index: 4;
+  font-weight: 300;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.map__controlsZoomIn,
+.map__controlsZoomOut {
+  width: 70px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--sandal);
+
+  font-size: 32px;
+  color: var(--white);
+
+  transition: opacity 200ms ease;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.map__controlsZoomIn {
+  background: var(--brown);
+}
+
+.map__controlsZoomIn:hover,
+.map__controlsZoomOut:hover {
+  opacity: 0.75
+}
+
+.map__header {
+  max-width: 485px;
+  margin-bottom: 60px;
+}
+
+.map__wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1700px) {
+  .map {
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .map {
+    max-height: 100vh
+  }
+
+  .map__tabletHidden .map__header,
+  .map__tabletHidden .map__button {
+    display: none;
+  }
+
+  .map__desktopHidden {
+    display: block;
+  }
+
+  .map {
+    margin-bottom: 40px;
+  }
+
+  .map__inner {
+    padding-top: 35px;
+  }
+
+  .map__headerTabletWrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .map__header {
+    text-align: center;
+    max-width: 100%;
+    font-size: 28px;
+    margin-bottom: 35px;
+  }
+
+  .map__buttonTabletWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .map__top {
+    text-align: center;
+  }
+
+  .map__controls {
+    top: 30px;
+    right: 30px;
+
+    bottom: auto;
+  }
+
+  .map__controlsZoomIn,
+  .map__controlsZoomOut {
+    width: 40px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .map {
+    margin-bottom: 20px;
+  }
+
+  .map__buttonTabletWrapper {
+    margin-bottom: 80px;
+  }
+
+  .map__controls {
+    top: 40px;
+
+    bottom: auto;
+  }
+}

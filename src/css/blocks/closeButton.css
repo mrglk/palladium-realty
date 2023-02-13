@@ -1,0 +1,35 @@
+.closeButton {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.closeButton::after, .closeButton::before  {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 22.5px;
+    height: 1.7px;
+    top: 50%;
+    left: 50%;
+    background-color: var(--black);
+    z-index: 11;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.closeButton::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+@media screen and (max-width: 960px) {
+    .closeButton {
+        width: 14px;
+        height: 14px;
+    }
+
+    .closeButton::after, .closeButton::before  {
+    width: 17.76px;
+    height: 1.77px;
+}
+
+}

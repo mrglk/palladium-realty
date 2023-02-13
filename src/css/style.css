@@ -1,0 +1,137 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "fonts.css";
+@import "vars.css";
+
+@import "blocks/button.css";
+@import "blocks/container.css";
+@import "blocks/aboutFact.css";
+@import "blocks/filterButton.css";
+@import "blocks/projectItem.css";
+@import "blocks/moreButton.css";
+@import "blocks/arrowButton.css";
+@import "blocks/slider.css";
+@import "blocks/inputRange.css";
+@import "blocks/offerItem.css";
+@import "blocks/serviceItem.css";
+@import "blocks/checkbox.css";
+@import "blocks/mapItem.css";
+@import "blocks/burgerMenu.css";
+@import "blocks/catalogForm.css";
+@import "blocks/overlay.css";
+@import "blocks/apartmentData.css";
+@import "blocks/closeButton.css";
+@import "blocks/select.css";
+@import "blocks/inputWrapper.css";
+@import "blocks/modals.css";
+@import "blocks/chartRange.css";
+@import "blocks/videoModal.css";
+@import "blocks/swiper.css";
+@import "blocks/cookie.css";
+@import "blocks/lines.css";
+@import "blocks/title.css";
+@import "blocks/animatedButton.css";
+@import "blocks/phoneSelect.css";
+@import "blocks/thankYou.css";
+
+@import "sections/header.css";
+@import "sections/firstScreen.css";
+@import "sections/about.css";
+@import "sections/projects.css";
+@import "sections/offers.css";
+@import "sections/priceChart.css";
+@import "sections/map.css";
+@import "sections/experts.css";
+@import "sections/letYouGet.css";
+@import "sections/goldenVisa.css";
+@import "sections/reviews.css";
+@import "sections/faq.css";
+@import "sections/services.css";
+@import "sections/contacts.css";
+@import "sections/footer.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--general-font);
+  font-weight: 400;
+  box-sizing: border-box;
+  background-color: var(--white-cream);
+  line-height: 1.15;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+form {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: var(--accent-font);
+  font-size: 64px;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: var(--accent-font);
+  font-size: 52px;
+  font-weight: 500;
+}
+
+h3 {
+  font-family: var(--accent-font);
+  font-size: 32px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1700px) {
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
