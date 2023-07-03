@@ -24,5 +24,5 @@ https://palladiumestate.ae/index.html
 git clone https://github.com/mrglk/palladium-realty
 cd palladium-realty
 npm install
-npm start
+npm run dev
 ```
