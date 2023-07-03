@@ -15,7 +15,8 @@ https://palladiumestate.ae/index.html
 ### Используемые технологии:
 
 * JS
-* HTML5/СSS3
+* HTML5
+* СSS3
 
 ### Запуск проекта
 
