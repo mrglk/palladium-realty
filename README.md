@@ -16,7 +16,6 @@ https://palladiumestate.ae/index.html
 
 * JS
 * HTML5/СSS3
-* SCSS
 
 ### Запуск проекта
 
